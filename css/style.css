@@ -224,7 +224,7 @@ body {
 
 /* ---------------------- ABOUT SECTION ---------------------- */
 .about {
-  background-image: url('/img/program-ojo.jpg');
+  background-image: url('../img/program-ojo.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -402,7 +402,7 @@ body {
 /* ---------------------- TEAM SECTION ---------------------- */
 .team-section {
       padding: 80px 20px;
-      background-image: url('/img/Manos.jpg');
+      background-image: url('../img/Manos.jpg');
       background-attachment: fixed;
       background-size: cover;
       background-position: center;
