@@ -8,6 +8,7 @@
     <link rel="icon" href="Logo.jpeg" type="image/x-icon">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
@@ -24,68 +25,87 @@
       <a href="#proyectos" class="btn-equipo">Nuestros Proyectos</a>
     </section>
   
-    <section id="equipo" class="team-section">
-      <h2>Nuestro Equipo Developer</h2>
-      <div class="container">
-        <div class="container">
-          <div class="profile-card">
-            <img src="img/DiegoC.png" alt="Diego Camus" class="profile-image">
-            <div class="profile-info">
-              <div class="profile-name">Diego Camus</div>
-              <div class="profile-role">SSR Software Engineer - Financial Manager</div>
-              <div class="profile-desc">Blockchain Dev - Cibersecurity
-                <span class="additional-desc" style="display:none;"> 
-                  <a href="https://www.linkedin.com/in/sebastian-camus-a92826179?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">Linkedin</a>
-                </span>
-              </div>
-              <button class="leer-mas-btn" >Leer más</button>
-            </div>
-          </div>
-        </div>        
-        <div class="profile-card" onclick="goToProfile('Gustavo')">
-          <img src="img/guty.png" alt="Gustavo Subia" class="profile-image">
-          <div class="profile-info">
-            <div class="profile-name">Gustavo Subia</div>
-            <div class="profile-role">Desarrollador Frontend</div>
-            <div class="profile-desc">Diseño sistemas eficientes y escalables, desarrollo interfaces intuitivas para garantizar calidad y colaboración efectiva.
-              <span class="additional-desc" style="display:none;"> 
-                <a href="https://gustavosubia.com.ar/" target="_blank"> <br>Portafolio</a>
-              </span>
-            </div>
-            <button class="leer-mas-btn" >Leer más</button>
-          </div>
+     <section id="equipo" class="team-section">
+    <h2>Nuestro Equipo Developer</h2>
+    <div class="container">
+      
+       <!-- Diego Camus -->
+      <div class="profile-card">
+        <div class="profile-image-wrapper">
+          <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80" alt="Logo" class="profile-image profile-logo">
+          <img src="img/DiegoC.png" alt="Diego Camus" class="profile-image profile-real-image">
+          <a href="https://www.linkedin.com/in/sebastian-camus-a92826179" target="_blank" class="hover-indicator">Ver Perfil →</a>
         </div>
-        <div class="profile-card" onclick="goToProfile('Diego')">
-          <img src="img/Logo.jpeg" alt="Luis Ramírez" class="profile-image">
-          <div class="profile-info">
-            <div class="profile-name">Diego Mendia</div>
-            <div class="profile-role">Desarrollador Backend</div>
-            <div class="profile-desc">Integra frontend y backend con soluciones eficientes y seguras.
-              <span class="additional-desc" style="display:none;"> 
-                <a href="https://diegomendia.com.ar/" target="_blank">Portafolio</a>
-              </span>
-            </div>
-            <button class="leer-mas-btn" >Leer más</button>
+        <div class="profile-info">
+          <div class="profile-name">Diego Camus</div>
+          <div class="profile-role">SSR Software Engineer - Financial Manager</div>
+          <div class="profile-desc">
+            Especialista en arquitectura blockchain y ciberseguridad. Lidera proyectos financieros con enfoque en soluciones descentralizadas, smart contracts y protocolos de seguridad robustos.
           </div>
+          <button class="leer-mas-btn">Leer más</button>
         </div>
-        <div class="profile-card" onclick="goToProfile('camila')">
-          <img src="img/Logo.jpeg" alt="Camila Torres" class="profile-image">
-          <div class="profile-info">
-            <div class="profile-name">Hernan Diaz</div>
-            <div class="profile-role">Prensa Provincial</div>
-            <div class="profile-desc">Creador de contenido de la provincia de cordoba
-              <span class="additional-desc" style="display:none;"> 
-                <a href="https://showcba.com.ar/" target="_blank"> <br>Pagina Web</a>
-              </span>
-            </div>
-            <button class="leer-mas-btn" >Leer más</button>
+      </div>
+
+      <!-- Gustavo Subia -->
+      <div class="profile-card">
+        <div class="profile-image-wrapper">
+          <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80" alt="Logo" class="profile-image profile-logo">
+          <img src="img/guty.png" alt="Gustavo Subia" class="profile-image profile-real-image">
+          <a href="https://gustavosubia.com.ar/" target="_blank" class="hover-indicator">Ver Perfil →</a>
+        </div>
+        <div class="profile-info">
+          <div class="profile-name">Gustavo Subia</div>
+          <div class="profile-role">Desarrollador Frontend</div>
+          <div class="profile-desc">
+            Experto en crear experiencias digitales intuitivas y escalables. Domina tecnologías modernas para construir interfaces que combinan diseño visual impactante con rendimiento óptimo.
           </div>
+          <button class="leer-mas-btn">Leer más</button>
         </div>
-    </section>
+      </div>
+
+      <!-- Diego Mendia -->
+      <div class="profile-card">
+        <div class="profile-image-wrapper">
+          <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80" alt="Logo" class="profile-image profile-logo">
+          <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=800&q=80" alt="Diego Mendia" class="profile-image profile-real-image">
+          <a href="https://diegomendia.com.ar/" target="_blank" class="hover-indicator">Ver Perfil →</a>
+        </div>
+        <div class="profile-info">
+          <div class="profile-name">Diego Mendia</div>
+          <div class="profile-role">Desarrollador Backend</div>
+          <div class="profile-desc">
+            Especialista en arquitectura blockchain y ciberseguridad. Lidera proyectos financieros con enfoque en soluciones descentralizadas, smart contracts y protocolos de seguridad robustos.
+          </div>
+          <button class="leer-mas-btn">Leer más</button>
+        </div>
+      </div>
+
+      <!-- Hernan Diaz -->
+      <div class="profile-card">
+        <div class="profile-image-wrapper">
+          <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80" alt="Logo" class="profile-image profile-logo">
+          <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=800&q=80" alt="Hernan Diaz" class="profile-image profile-real-image">
+          <a href="https://showcba.com.ar/" target="_blank" class="hover-indicator">Ver Perfil →</a>
+        </div>
+        <div class="profile-info">
+          <div class="profile-name">Hernan Diaz</div>
+          <div class="profile-role">Prensa Provincial</div>
+          <div class="profile-desc">
+            Comunicador digital y creador de contenido especializado en historias de Córdoba y el mundo. Conecta marcas, eventos y cultura local con audiencias a través de narrativas auténticas y estrategias multimedia.
+          </div>
+          <button class="leer-mas-btn">Leer más</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+    </div>
+  </section>
 
     <section id="proyectos" class="projects-section" data-aos="fade-up">
       <h2>Nuestros Proyectos</h2>
-      <p class="section-subtitle">Descubre los proyectos en los que hemos trabajado y las soluciones innovadoras que hemos creado</p>
+      <p class="section-subtitle">Descubre los proyectos en los que hemos trabajado y las soluciones innovadoras que hemos impulsado</p>
       
       <div class="projects-container">
         
@@ -98,19 +118,19 @@
             </div>
           </div>
           <div class="project-info">
-            <h3 class="project-title">Dashboard Analytics</h3>
-            <p class="project-description">Plataforma de análisis de datos en tiempo real con visualizaciones interactivas y reportes personalizados.</p>
+            <h3 class="project-title">Alto Empacho</h3>
+            <p class="project-description">Sitio web diseñado para reflejar la esencia de un emprendimiento artesanal dedicado a la creación de tortas personalizadas y mesas dulces únicas. La propuesta combina una estética cálida y moderna que caracterizan a la marca.</p>
             <div class="project-tags">
-              <span class="project-tag">React</span>
-              <span class="project-tag">Node.js</span>
-              <span class="project-tag">MongoDB</span>
+              <span class="project-tag">Html</span>
+              <span class="project-tag">JavaScript</span>
+              <span class="project-tag">ApiRest</span>
             </div>
-            <a href="https://ejemplo.com/proyecto1" target="_blank" class="project-link" rel="noopener noreferrer">Ver Proyecto</a>
+            <a href="https://altoempacho.com.ar/" target="_blank" class="project-link" rel="noopener noreferrer">Ver Proyecto</a>
           </div>
         </div>
 
         <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
-          <div class="project-status in-progress">En Desarrollo</div>
+          <div class="project-status completed">Completado</div>
           <div class="project-image-container">
             <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=800&q=80" alt="Proyecto 2" class="project-image">
             <div class="project-overlay">
@@ -118,94 +138,94 @@
             </div>
           </div>
           <div class="project-info">
-            <h3 class="project-title">E-Commerce Platform</h3>
-            <p class="project-description">Tienda online completa con sistema de pagos integrado, gestión de inventario y panel administrativo.</p>
+            <h3 class="project-title">Show Cordoba</h3>
+            <p class="project-description">Proyecto diseñado para mantener al público siempre al día con los shows y eventos más recientes de la ciudad. Permite descubrir fácilmente recitales, obras de teatro, festivales y actividades culturales.</p>
             <div class="project-tags">
-              <span class="project-tag">Vue.js</span>
-              <span class="project-tag">Laravel</span>
+              <span class="project-tag">JavaScript</span>
+              <span class="project-tag">BootStrap</span>
+              <span class="project-tag">Html</span>
+            </div>
+            <a href="https://showcba.com.ar/" target="_blank" class="project-link" rel="noopener noreferrer">Ver Proyecto</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-aos="zoom-in" data-aos-delay="300">
+          <div class="project-status completed">Completado</div>
+          <div class="project-image-container">
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80" alt="Proyecto 3" class="project-image">
+            <div class="project-overlay">
+              <span class="project-overlay-text">Ver Proyecto</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Blockchain Wallet</h3>
+            <p class="project-description">Billetera digital segura para criptomonedas con autenticación multi-factor y transacciones encriptadas.</p>
+            <div class="project-tags">
+              <span class="project-tag">Blockchain</span>
+              <span class="project-tag">Web3</span>
+              <span class="project-tag">Security</span>
+            </div>
+            <a href="https://ejemplo.com/proyecto3" target="_blank" class="project-link" rel="noopener noreferrer">Ver Proyecto</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-aos="zoom-in" data-aos-delay="300">
+          <div class="project-status completed">Completado</div>
+          <div class="project-image-container">
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80" alt="Proyecto 4" class="project-image">
+            <div class="project-overlay">
+              <span class="project-overlay-text">Ver Proyecto</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Blockchain Wallet</h3>
+            <p class="project-description">Billetera digital segura para criptomonedas con autenticación multi-factor y transacciones encriptadas.</p>
+            <div class="project-tags">
+              <span class="project-tag">Blockchain</span>
+              <span class="project-tag">Web3</span>
+              <span class="project-tag">Security</span>
+            </div>
+            <a href="https://ejemplo.com/proyecto3" target="_blank" class="project-link" rel="noopener noreferrer">Ver Proyecto</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-aos="zoom-in" data-aos-delay="300">
+          <div class="project-status completed">Completado</div>
+          <div class="project-image-container">
+            <img src="img/p5.jpg" alt="Proyecto 5" class="project-image">
+            <div class="project-overlay">
+              <span class="project-overlay-text">Ver Proyecto</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Bingo Musical</h3>
+            <p class="project-description">Juego interactivo para compartir y disfrutar con amigos. Ofrece una experiencia dinámica y entretenida, combinando mecánicas clásicas del bingo con elementos musicales, pensado para fomentar la diversión y la participación grupal.</p>
+            <div class="project-tags">
+              <span class="project-tag">JavaScript</span>
+              <span class="project-tag">CSS</span>
+              <span class="project-tag">Json</span>
+            </div>
+            <a href="https://bingo-musical-tau.vercel.app/" target="_blank" class="project-link" rel="noopener noreferrer">Ver Proyecto</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-aos="zoom-in" data-aos-delay="300">
+          <div class="project-status in-progress">En Desarrollado</div>
+          <div class="project-image-container">
+            <img src="img/p6.jpg" alt="Proyecto 6" class="project-image">
+            <div class="project-overlay">
+              <span class="project-overlay-text">Ver Proyecto</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Sistema de Gestión de Alquileres </h3>
+            <p class="project-description">Una aplicación web dinámica para la gestión de propiedades en alquiler, permitiendo la interacción de varios tipos de usuarios</p>
+            <div class="project-tags">
+              <span class="project-tag">Java</span>
+              <span class="project-tag">SpringBoot</span>
               <span class="project-tag">MySQL</span>
             </div>
-            <a href="https://ejemplo.com/proyecto2" target="_blank" class="project-link" rel="noopener noreferrer">Ver Proyecto</a>
-          </div>
-        </div>
-
-        <div class="project-card" data-aos="zoom-in" data-aos-delay="300">
-          <div class="project-status completed">Completado</div>
-          <div class="project-image-container">
-            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80" alt="Proyecto 3" class="project-image">
-            <div class="project-overlay">
-              <span class="project-overlay-text">Ver Proyecto</span>
-            </div>
-          </div>
-          <div class="project-info">
-            <h3 class="project-title">Blockchain Wallet</h3>
-            <p class="project-description">Billetera digital segura para criptomonedas con autenticación multi-factor y transacciones encriptadas.</p>
-            <div class="project-tags">
-              <span class="project-tag">Blockchain</span>
-              <span class="project-tag">Web3</span>
-              <span class="project-tag">Security</span>
-            </div>
-            <a href="https://ejemplo.com/proyecto3" target="_blank" class="project-link" rel="noopener noreferrer">Ver Proyecto</a>
-          </div>
-        </div>
-
-        <div class="project-card" data-aos="zoom-in" data-aos-delay="300">
-          <div class="project-status completed">Completado</div>
-          <div class="project-image-container">
-            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80" alt="Proyecto 3" class="project-image">
-            <div class="project-overlay">
-              <span class="project-overlay-text">Ver Proyecto</span>
-            </div>
-          </div>
-          <div class="project-info">
-            <h3 class="project-title">Blockchain Wallet</h3>
-            <p class="project-description">Billetera digital segura para criptomonedas con autenticación multi-factor y transacciones encriptadas.</p>
-            <div class="project-tags">
-              <span class="project-tag">Blockchain</span>
-              <span class="project-tag">Web3</span>
-              <span class="project-tag">Security</span>
-            </div>
-            <a href="https://ejemplo.com/proyecto3" target="_blank" class="project-link" rel="noopener noreferrer">Ver Proyecto</a>
-          </div>
-        </div>
-
-        <div class="project-card" data-aos="zoom-in" data-aos-delay="300">
-          <div class="project-status completed">Completado</div>
-          <div class="project-image-container">
-            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80" alt="Proyecto 3" class="project-image">
-            <div class="project-overlay">
-              <span class="project-overlay-text">Ver Proyecto</span>
-            </div>
-          </div>
-          <div class="project-info">
-            <h3 class="project-title">Blockchain Wallet</h3>
-            <p class="project-description">Billetera digital segura para criptomonedas con autenticación multi-factor y transacciones encriptadas.</p>
-            <div class="project-tags">
-              <span class="project-tag">Blockchain</span>
-              <span class="project-tag">Web3</span>
-              <span class="project-tag">Security</span>
-            </div>
-            <a href="https://ejemplo.com/proyecto3" target="_blank" class="project-link" rel="noopener noreferrer">Ver Proyecto</a>
-          </div>
-        </div>
-
-        <div class="project-card" data-aos="zoom-in" data-aos-delay="300">
-          <div class="project-status completed">Completado</div>
-          <div class="project-image-container">
-            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80" alt="Proyecto 3" class="project-image">
-            <div class="project-overlay">
-              <span class="project-overlay-text">Ver Proyecto</span>
-            </div>
-          </div>
-          <div class="project-info">
-            <h3 class="project-title">Blockchain Wallet</h3>
-            <p class="project-description">Billetera digital segura para criptomonedas con autenticación multi-factor y transacciones encriptadas.</p>
-            <div class="project-tags">
-              <span class="project-tag">Blockchain</span>
-              <span class="project-tag">Web3</span>
-              <span class="project-tag">Security</span>
-            </div>
-            <a href="https://ejemplo.com/proyecto3" target="_blank" class="project-link" rel="noopener noreferrer">Ver Proyecto</a>
+            <a href="https://" target="_blank" class="project-link" rel="noopener noreferrer">Ver Proyecto</a>
           </div>
         </div>
         
@@ -215,7 +235,7 @@
     
     <section class="contact">
       <h2>Contacto</h2>
-      <p>¿Interesado en trabajar con nosotros?</p>
+      <a href="#equipo" style="text-decoration: none; color: inherit;" >¿Interesado en trabajar con nosotros?</a>
       <p>Cada perfil contiene información necesaria de los participantes de esta empresa. </p>
     </section>
   

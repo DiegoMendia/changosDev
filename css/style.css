@@ -401,123 +401,224 @@ body {
 
 /* ---------------------- TEAM SECTION ---------------------- */
 .team-section {
-  padding: 80px 20px;
-  background-image: url('/img/Manos.jpg');
-  background-attachment: fixed;
-  position: relative;
-}
+      padding: 80px 20px;
+      background-image: url('/img/Manos.jpg');
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
 
-.team-section::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  
-  z-index: 0;
-}
+    .team-section::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(10, 10, 20, 0.9);
+      z-index: 0;
+    }
 
-.team-section h2 {
-  text-align: center;
-  color: #96ebf7;
-  font-size: 3em;
-  margin-bottom: 40px;
-  position: relative;
-  z-index: 1;
-}
+    .team-section h2 {
+      text-align: center;
+      color: #96ebf7;
+      font-size: 3em;
+      margin-bottom: 60px;
+      position: relative;
+      z-index: 1;
+      text-shadow: 0 0 20px rgba(150, 235, 247, 0.5);
+      letter-spacing: 3px;
+    }
 
-/* ---------------------- GRID CONTAINER ---------------------- */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-  position: relative;
-  z-index: 1;
-}
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 40px;
+      position: relative;
+      z-index: 1;
+    }
 
-/* ---------------------- PROFILE CARD ---------------------- */
-.profile-card {
-  background: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=60') center center/cover;
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
-  position: relative;
-  color: white;
-}
+    .profile-card {
+      background: linear-gradient(145deg, #1a1a2e, #16213e);
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      cursor: pointer;
+      position: relative;
+      border: 2px solid transparent;
+    }
 
-.profile-card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6);
-  z-index: 0;
-}
+    .profile-card:hover {
+      transform: translateY(-10px) scale(1.02);
+      box-shadow: 0 15px 50px rgba(0, 188, 212, 0.4);
+      border-color: #00bcd4;
+    }
 
-.profile-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8);
-}
+    .profile-image-wrapper {
+      position: relative;
+      width: 100%;
+      height: 320px;
+      overflow: hidden;
+      background: #000;
+    }
 
-.profile-image {
-  width: 100%;
-  border-radius: 10px;
-  filter: brightness(0.9);
-}
+    .profile-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
 
-.profile-info {
-  padding: 20px;
-  text-align: center;
-  position: relative;
-  z-index: 1;
-}
+    .profile-logo {
+      opacity: 1;
+      transform: scale(1);
+      filter: brightness(0.8);
+    }
 
-.profile-name {
-  font-weight: bold;
-  font-size: 1.6em;
-  color: #ffffff;
-}
+    .profile-real-image {
+      opacity: 0;
+      transform: scale(1.1);
+    }
 
-.profile-role {
-  font-style: italic;
-  color: #00bcd4;
-  margin-top: 8px;
-  font-size: 1em;
-}
+    .profile-card:hover .profile-logo {
+      opacity: 0;
+      transform: scale(0.9);
+    }
 
-.profile-desc {
-  font-size: 0.95em;
-  color: #dddddd;
-  margin-top: 10px;
-  line-height: 1.4;
-}
+    .profile-card:hover .profile-real-image {
+      opacity: 1;
+      transform: scale(1);
+    }
 
-.additional-desc a {
-  color: #cccccc;
-}
+    .profile-info {
+      padding: 25px;
+      text-align: center;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.95));
+    }
 
-/* ---------------------- LEER MÁS BUTTON ---------------------- */
-.leer-mas-btn {
-  margin-top: 8px;
-  padding: 5px 10px;
-  font-size: 0.9em;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
+    .profile-name {
+      font-weight: bold;
+      font-size: 1.6em;
+      color: #ffffff;
+      margin-bottom: 8px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
 
-.leer-mas-btn:hover {
-  background-color: #0056b3;
-}
+    .profile-role {
+      font-style: italic;
+      color: #00bcd4;
+      margin-top: 8px;
+      font-size: 1em;
+      margin-bottom: 12px;
+    }
+
+    .profile-desc {
+      font-size: 0.95em;
+      color: #dddddd;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    .additional-desc {
+      display: block;
+      margin-top: 10px;
+      opacity: 0;
+      max-height: 0;
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+
+    .additional-desc.show {
+      opacity: 1;
+      max-height: 100px;
+    }
+
+    .additional-desc a {
+      color: #00bcd4;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    .additional-desc a:hover {
+      color: #ff9100;
+    }
+
+    .leer-mas-btn {
+      margin-top: 10px;
+      padding: 8px 20px;
+      font-size: 0.9em;
+      background: linear-gradient(135deg, #00bcd4, #0097a7);
+      color: white;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      font-family: 'Orbitron', sans-serif;
+      font-weight: 600;
+      letter-spacing: 1px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(0, 188, 212, 0.3);
+    }
+
+    .leer-mas-btn:hover {
+      background: linear-gradient(135deg, #ff9100, #ff7e00);
+      box-shadow: 0 6px 20px rgba(255, 145, 0, 0.4);
+      transform: translateY(-2px);
+    }
+
+    .hover-indicator {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      background: rgba(0, 188, 212, 0.9);
+      color: white;
+      padding: 8px 15px;
+      border-radius: 20px;
+      font-size: 0.75em;
+      font-weight: bold;
+      text-transform: uppercase;
+      z-index: 2;
+      opacity: 0;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .hover-indicator:hover {
+      background: rgba(255, 145, 0, 0.9);
+      transform: scale(1.05);
+      box-shadow: 0 4px 15px rgba(255, 145, 0, 0.5);
+    }
+
+    .profile-card:hover .hover-indicator {
+      opacity: 1;
+    }
+
+    @media (max-width: 768px) {
+      .team-section h2 {
+        font-size: 2.2em;
+      }
+
+      .container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      .profile-image-wrapper {
+        height: 280px;
+      }
+
+      .profile-name {
+        font-size: 1.4em;
+      }
+    }
 
 /* ---------------------- CONTACT SECTION ---------------------- */
 .contact {
@@ -629,8 +730,8 @@ footer {
 
 /* ---------------------- PROJECTS SECTION ---------------------- */
 .projects-section {
+  background: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80') center center/cover;
   padding: 100px 20px;
-  background: linear-gradient(135deg, #0f3460 0%, #16213e 50%, #1a1a2e 100%);
   position: relative;
   overflow: hidden;
 }
