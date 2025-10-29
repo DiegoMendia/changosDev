@@ -1030,3 +1030,34 @@ footer {
     height: 200px;
   }
 }
+
+.contact a {
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  display: inline-block;
+  padding: 5px 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.contact a:hover {
+  color: #00bcd4;
+  transform: translateY(-2px);
+}
+
+.contact a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background: linear-gradient(90deg, #00bcd4, #ff9100);
+  transition: all 0.4s ease;
+  transform: translateX(-50%);
+}
+
+.contact a:hover::after {
+  width: 100%;
+}
